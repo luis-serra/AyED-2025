@@ -9,17 +9,27 @@ using namespace std;
 // -----------------------------------------------------------------------------
 void swap_por_puntero(int* a, int* b) {
     // TODO: implementar intercambio clásico usando *a, *b y una variable temporal.
-    // int tmp = *a;
-    // *a = *b;
-    // *b = tmp;
+    int tmp = *a;
+    *a = *b;
+    *b = tmp;
 }
 
 void swap_si_mayor(int* p, int* q) {
     // TODO: intercambiar solo si *p > *q.
+    if (*p > *q){
+      int tmp = *p;
+      *p = *q;
+      *q = tmp;
+    }
 }
 
 void swap_si_menor(int* p, int* q) {
     // TODO (opcional): intercambiar solo si *p < *q.
+    if (*p < *q){
+      int tmp = *p;
+      *p = *q;
+      *q = tmp;
+
 }
 
 void set_si_positivo(int* p, int valor) {
